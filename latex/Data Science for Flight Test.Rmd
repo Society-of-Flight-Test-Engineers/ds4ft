@@ -1,0 +1,42 @@
+---
+title: "Data Science for Flight Test"
+author: "Mark Jones Jr."
+date: "12/31/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Section X
+### Fundamentals
+
+A matrix is an $n \times n$ data structure encountered in many flight test computations. A vector is a specific example of a matrix with dimensions $n \times 1$.  Consider the following examples.
+
+\[\begin{bmatrix}
+a_{11}&a_{12}&\cdots &a_{1n} \\
+a_{21}&a_{22}&\cdots &a_{2n} \\
+\vdots & \vdots & \ddots & \vdots\\
+a_{n1}&a_{n2}&\cdots &a_{nn}
+\end{bmatrix}\]
+
+In R, 
+
+### Coding a matrix in R
+
+```{R matrix coding}
+matrix(1:9, nrow = 3, ncol = 3)
+```
+
+The command above tells R to create a matrix using the values 1 through 9,
+```{R matrix coding - subpart 1}
+1:9
+```
+It puts these values in the matrix starting at row 1, column 1.  It fills in the entire first column, then subsequent columns.  The arguments included in the command give the matrix dimensions. To create a matrix with 3 rows, for example, use the argument below.
+
+```{R matrix coding - subpart 2}
+nrow = 3
+```
+
+This is a one page primer for using LaTeX, markdown, and R.
